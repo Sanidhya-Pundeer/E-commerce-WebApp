@@ -9,8 +9,8 @@ public class SqlCon {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			String URL = "jdbc:mysql://localhost/mvc";
-			String user = "Riya";
-			String pass = "771078";
+			String user = "root";
+			String pass = "scott";
 			Connection con = DriverManager.getConnection(URL, user, pass);
 			return con;
 		} catch (Exception e) {
